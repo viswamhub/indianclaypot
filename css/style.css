@@ -1,0 +1,357 @@
+/* body section */
+
+body{
+    background: #d4d4d4;
+}
+.clearfix{
+    clear:both;
+}
+.clearfix:after{
+    clear: both;
+    display: table;
+    content: "";
+}
+.left{
+    float: left;
+}
+.right {
+    float: right;
+}
+/*image banner */
+ 
+.imagebanner{
+    width: 100%;
+    height: auto;
+    margin-top: -353px;
+    position: relative;
+    text-align: right;
+
+}
+
+/*download button */
+.pdfdownload{
+    /* margin: 10%; */
+    /* background-color: deepskyblue; */
+    padding: 1%;
+    margin-left: -1%;
+    text-align: center;
+    height: 50%;
+    width: 20%;
+    margin-left: 41%;
+}
+
+.pdfdownload p{
+text-decoration: none;
+font-family: poppins;
+font-size: medium;
+
+}
+
+/*image grid */
+.rowimage {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .gridone {
+    flex: 25%;
+    max-width: 50%;
+    padding: 0 4px;
+  }
+  
+  .gridone img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 800px) {
+    .gridone {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .gridone {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+
+
+
+
+/* media query */
+
+@media screen and (max-width:1024px)
+{
+    img.imagelogo {width:auto;
+text-align: center;}
+  }
+  
+@media screen and (min-width:1025px){
+    img.imagelogo{width: 300px;}
+  }
+  
+  img.imagelogo{height: auto; width: auto;}
+
+@media (max-width:1000px){
+    img.imagelogo{
+     text-align: center;
+     max-width: 100%;
+     min-width: 50%;
+     max-height: 60%;
+     position: relative;
+    }
+}
+
+@media (max-width:1000px){
+    .imagehome{
+     text-align: center;
+     width: 20%;
+    }
+}
+
+@media (max-width:1000px){
+    .heropagetext{
+     text-align: center;
+    }
+}
+
+@media (max-width:1000px){
+    .horizontaline{
+     visibility: hidden;
+    }
+}
+
+
+
+ /* navbar section */
+
+#navbar .container-fluid{
+    box-shadow: 0px 3px 6px #868686;
+    opacity: 1;
+    background-color: white;
+}
+
+.navbar-expand-lg{
+    padding-top: 13px;
+}
+.navbar ul li {
+    padding: 15px 33px;
+    list-style: none;
+    float: left;
+    list-style-type:none;
+    list-style: none;
+    text-align: center;
+    text-decoration: none;
+    text-decoration: none;
+    font-family: poppins;
+
+}
+
+.navbar ul li a {
+    color: rgb(7, 7, 7);
+    text-decoration: none;
+
+}
+
+.navbar ul i{
+   
+    color: rgb(0, 0, 0);
+}
+
+
+
+/* hero page section */
+
+#heropage p{
+    font-size: 35px;
+    font-family: poppins;
+    font-weight: 600;
+    margin-top: 61px;
+    margin-left: 35px;
+}
+
+#heropage .imagehome{
+    position: relative;
+
+}
+#heropage .imagelogo {
+    padding: 160px 0px 0px 0px;
+    margin-top: -107px;
+    position: absolute;
+    text-align: center;
+}
+
+/* detail section */
+
+.startwelcome h2{
+    text-align: center;
+    font: normal normal 600 46px/69px Poppins;
+    letter-spacing: 0px;
+    color: #452a29;
+    opacity: 1;
+    position: relative;
+}
+
+.ourmission h2, p{
+    font-family: poppins;
+    font-size: revert;
+    color: #464646;
+    margin-left: 20px;
+    margin-right: 4px;
+
+}
+
+.aboutus h2, p{
+    font-family: poppins;
+    font-size: revert;
+    color: #464646;
+    margin-left: 20px;
+    margin-right: 4px;
+}
+
+ 
+.horizontaline hr{
+    top: -46px;
+    left: 0px;
+    width: 1280px;
+    height: 1px;
+    background: #e0cc3d 0% 0% no-repeat padding-box;
+    opacity: 1;
+    margin-top: 9px;
+    position: absolute;
+    margin-top: 601px;;
+    margin-left: 20px;
+}
+
+/* address section */
+
+
+.boxed{
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 10px;
+    -webkit-highlight: 20%;
+    height: 150px;
+    width: 300px;
+    position: inherit;
+    margin: 10px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #0000001f;
+    opacity: 1;
+    position: relative;
+}
+
+.middleboxed{
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 10px;
+    height: 150px;
+    width: 300px;
+    position: absolute;
+    /* margin: -36%; */
+    padding: -13%;
+    float: inline-start;
+    float: inherit;
+    margin: -44px 0px 0px 510px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #0000001f;
+    opacity: 1;
+}
+
+.lastboxed{
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 10px;
+    height: 150px;
+    width: 300px;
+    position: absolute;
+    /* margin: -36%; */
+    padding: -13%;
+    float: inline-start;
+    float: inherit;
+    margin: -44px 0px 0px 1007px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #0000001f;
+    opacity: 1;
+}
+.boxed p{
+    text-align: center;
+    font-family: poppins;
+    font-size: 20px;
+    margin: unset;
+    padding: 13px 0px 0px 0px;
+    
+}
+
+.boxed img{
+    margin: 0%;
+    position: absolute;
+    padding: 10px;
+}
+
+.weekdays p{
+    font-family: poppins;
+    position: absolute;
+    padding: 20px;
+
+}
+
+.sunday p{
+    font-family: poppins;
+    position: absolute;
+    padding: 46px 20px;
+}
+
+.holiday p{
+    float: right;
+    padding: 0px 10px 0px 0px;
+    position: relative;
+    color: orange;
+    font-size: small;
+    margin-top: 67%;
+    font-family: poppins;
+}
+
+/* menu section */
+
+.menuheading p {
+    text-align: center;
+    font: normal normal 600 46px/69px Poppins;
+    color: #452a29;
+    opacity: 1;
+}
+
+/* gallery section */
+
+.galleryheading p{
+    text-align: center;
+    font: normal normal 600 46px/69px Poppins;
+    color: #452a29;
+    opacity: 1;
+    margin-left: 4%;
+    margin-top: 1%;
+}
+
+  /*footerpart */
+  .footersection {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color:#452a29;
+    color: white;
+    text-align: center;
+  }
+
+  .footersection p{
+    padding: 1%;
+    color: #d4d4d4;
+  }
