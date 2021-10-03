@@ -1,1 +1,1 @@
-alert("hello");
+alert("Welcome to Indianclaypot Restaurant");
