@@ -176,7 +176,6 @@ font-size: medium;
   position: relative;
   display: flex;
   flex-wrap: wrap;
-  padding-top: .5rem;
   padding-bottom: .5rem;
   flex-direction: column;
   align-content: flex-start;
