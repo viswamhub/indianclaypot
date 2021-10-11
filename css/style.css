@@ -1,8 +1,9 @@
 /* body section */
 
 body{
-    background: #d4d4d4;
-}
+    background: #f9fafb;
+  }
+
 .clearfix{
     clear:both;
 }
@@ -18,15 +19,19 @@ body{
     float: right;
 }
 /*image banner */
- 
 .imagebanner{
     width: 100%;
     height: auto;
-    margin-top: -353px;
+    margin-top: -377px;
     position: relative;
     text-align: right;
-    right: -3%;
 
+}
+
+@media screen and (max-width: 1023px){
+  .imagebanner{
+    width: 20%;
+  }
 }
 
 /*download button */
@@ -67,6 +72,9 @@ font-size: medium;
   .pdfdownload {
     font-size: small;
     margin: auto;
+    padding: inherit;
+    /* margin-left: 20%; */
+    width: auto;
   }
 }
 
@@ -243,6 +251,7 @@ font-size: medium;
 /* detail section */
 }
 
+
 .startwelcome h2{
     text-align: center;
     font: normal normal 600 46px/69px Poppins;
@@ -251,9 +260,10 @@ font-size: medium;
     opacity: 1;
     position: relative;
     padding: 2%;
+    font-size: calc((4 - 1) * .5vw + 1rem);
 }
 
-.ourmission h2, p{
+.ourmission h2{
     font-family: poppins;
     font-size: revert;
     color: #464646;
@@ -262,7 +272,58 @@ font-size: medium;
 
 }
 
-.aboutus h2, p{
+.ourmission{
+  position: relative;
+  width: auto;
+  float: right;
+  white-space: normal;
+  transition-timing-function: cubic-bezier(0.42, 0, 0.16, 0.99);
+  transition-duration: 0.8s;
+  transition-delay: 0.385714s;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-bottom: 0;
+  margin-left: 45%;
+  margin-right: auto;
+  font-size: smaller;
+  text-align: justify;
+}
+@media screen and (max-width: 768px) and (orientation: landscape){
+  .ourmission{
+    margin: auto;
+    text-align: justify;
+  }
+}
+@media screen and (max-width: 425px){
+  .ourmission{
+    margin: auto;
+    position: relative;
+    margin-top: 2%;
+  }
+}
+@media screen and (min-width: 768px){
+  .ourmission{
+    contain: block-size;
+    max-width: fit-content;
+    font-size: medium;
+    width: auto;
+    margin-inline-start: auto;
+}
+}
+
+@media screen and (min-width: 1024px){
+  .ourmission{
+    contain: block-size;
+    max-width: fit-content;
+    text-align: justify;
+    margin-left: 45%;
+    font-size: medium;
+}
+
+
+.aboutus h2{
     font-family: poppins;
     font-size: revert;
     color: #464646;
@@ -286,7 +347,7 @@ font-size: medium;
 
 /* address section */
 
-
+/*
 .boxed{
     border: 1px solid white;
     background-color: white;
@@ -298,13 +359,10 @@ font-size: medium;
     background: #FFFFFF 0% 0% no-repeat padding-box;
     box-shadow: 0px 3px 6px #0000001f;
     opacity: 1;
+    margin-left: 2%;
 }
-@media screen and (max-width:768px){
+@media screen and (max-width:769px){
   .boxed{
-    position: relative;
-    margin-top: 5%;
-    margin-left: 17%;
-    left: -5%;
   }
 }
 
@@ -315,111 +373,140 @@ font-size: medium;
     border-radius: 10px;
     height: 150px;
     width: 300px;
-    /* margin: -36%; */
+  
      padding: -13%; 
     float: inline-start;
     float: inherit;
     background: #FFFFFF 0% 0% no-repeat padding-box;
     box-shadow: 0px 3px 6px #0000001f;
     opacity: 1;
-    margin-left: 41%;
-    vertical-align: ce;
+    margin-left: 40%;
+    vertical-align: centre;
     padding-top: 1%;
     position: relative;
 }
 
 @media screen and (max-width:768px){
   .middleboxed{
-    display: none;
   }
 }
-
+@media screen and (max-width: 1025px) and (min-width: 1023px) and (orientation: landscape){
+.middleboxed {
+  margin-left: 20%;
+}
+}
 @media screen and (min-width:768px){
   .middleboxed{
     position: relative;
     float: left;
     margin: 0;
     align-items: end;
-    /* margin: auto; */
-    /* padding: 6%; */
-    margin-left: 36%;
+    margin: auto;
+   
   }
 }
-@media screen and (max-width:1023px){
-  .middleboxed{
-    position: relative;
-    float: left;
-    margin: 0;
-    align-items: end;
-    /* margin: auto; */
-    /* padding: 6%; */
-    margin-left: 36%;
-  }
-}
+
 
 
 .lastboxed{
-  border: 1px solid white;
-  background-color: white;
-  border-radius: 10px;
-  height: 150px;
-  width: 300px;
-  /* margin: -36%; */
-   padding: -13%; 
-  background: #FFFFFF 0% 0% no-repeat padding-box;
-  box-shadow: 0px 3px 6px #0000001f;
-  opacity: 1;
-  margin-left: 41%;
-  vertical-align: ce;
-  padding-top: 1%;
-  margin-left: auto;
-  margin-top: -11%;
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 10px;
+    height: 150px;
+    width: 300px;
+    padding: -13%;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #0000001f;
+    opacity: 1;
+    margin-left: 41%;
+    vertical-align: ce;
+    padding-top: 1%;
+    margin-left: auto;
+    margin-top: -10%;
 }
 
-@media screen and (max-width:768px){
+@media screen and (max-width: 1920px) and (min-width: 1440px) and (orientation: landscape){
   .lastboxed{
+    margin-right: 6%;
+    margin-top: -11%;
+    position: relative;
+  }
+}
+
+@media screen and (max-width: 1440px) and (min-width: 1023px) and (orientation: landscape){
+  .lastboxed{
+    position: relative;
+    flex: auto;
+    padding: 2%;
+    margin-top: -11%;
+    float: right;
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 1440px) and (orientation: landscape){
+  .lastboxed{
+    position: relative;
+    margin-left: 70%;
+    flex: auto;
+    padding: 2%;
+  }
+}
+@media screen and (max-width: 1025px) and (min-width: 1023px) and (orientation: landscape){
+  .lastboxed{
+    margin-top: -15%;
+    position: relative;
+    margin-left: 70%;
+    flex: auto;
+    padding: 2%;
+  }
+}
+@media screen and (max-width: 1024) and (min-width: 768px) and (orientation: landscape){
+  .lastboxed{
+    margin-right: 6%;
+    margin-top: -11%;
+    position: relative;
+  }
+}
+@media screen and (min-width: 768px) and(max-width: 790px) and (orientation: portrait){
+  .lastboxed{
+    margin-right: 6%;
+    margin-top: -11%;
+    position: relative;
     display: none;
   }
 }
-
-@media only screen and (min-width: 768px) {
+@media screen and (max-width: 768px) and (min-width: 478px) and (orientation: landscape){
   .lastboxed{
-
-  }
-}
-
-@media screen and (min-width:768px){
-  .lastboxed{
+    margin-right: 5%;
+    margin-top: -20%;
     position: relative;
-    float: right;
-    /* margin: 0; */
-    margin: 0;
-    /* margin: auto; */
-    /* padding: 6%; */
-    margin-top: -14.5%;
-    margin-left: 71%;
   }
 }
-@media screen and (max-width:1023px){
+@media screen and (max-width: 768px) and (min-width: 478px) and (orientation: landscape){
   .lastboxed{
+    margin-right: 5%;
+    margin-top: -20%;
     position: relative;
-    float: right;
-    /* margin: 0; */
-    margin: 0;
-    /* margin: auto; */
-    /* padding: 6%; */
-    margin-top: -14.5%;
-    margin-left: 71%;
   }
 }
-@media screen and (max-width: 1440px) and (min-width: 1053px) {
+@media screen and (max-width: 769px) and (min-width: 767px) and (orientation:landscape){
   .lastboxed{
-    float: right;
+    margin-right: 6%;
+    margin-top: -20%;
     position: relative;
-    /* bottom: 46%; */
-    margin-top: -11.5%;
   }
 }
+@media screen and (max-width: 500px) and (min-width: 320px) and (orientation:portrait){
+  .lastboxed{
+    margin-top: 5%;
+    position: absolute;
+    padding: -4%;
+    position: relative;
+  }
+}
+
+
+
+
 
 .boxed p{
     text-align: center;
@@ -435,13 +522,56 @@ font-size: medium;
     position: absolute;
     padding: 10px;
 }
-
+*/
 .weekdays p{
     font-family: poppins;
     position: absolute;
     padding: 20px;
 
 }
+
+.restaurantabout{
+  display: block;
+  max-width: 100%;
+  height: auto;
+  width: auto;
+  margin-top: 2%;
+  position: absolute;
+  text-align: center;
+}
+@media screen and (max-width: 769px)and (orientation: landscape){
+  .restaurantabout{
+    position: absolute;
+    width: 35%;
+  }
+}
+@media screen and (max-width:425px){
+  .restaurantabout{
+    position:relative;
+    width: auto;
+  }
+}
+@media screen and (min-width:1023px)and (max-width:1025px){
+  .restaurantabout{
+    position: absolute;
+    width: 45%;
+    margin-top: 7%;
+  }
+}
+@media screen and (min-width: 769px) and (min-width: 1023px) and (max-width: 1025px){
+.restaurantabout {
+    position: absolute;
+    width: 43%;
+    margin-top: 7%;
+}
+}
+@media screen and (max-width:768px){
+  .restaurantabout{
+    text-align: center;
+  }
+}
+
+
 
 .sunday p{
     font-family: poppins;
@@ -460,12 +590,31 @@ font-size: medium;
 }
 
 /* menu section */
+/*
+@media screen and (min-width: 1440px) and (orientation:landscape){
+  #menu{
+    padding-top:0%;
+  }
+}
+@media screen and (max-width: 426px){
+  #Menu{
+    margin: auto;
+    padding: 0%;
+  }
+}
+*/
 
+
+
+.menuheading{
+  position: absolute;
+}
 .menuheading p {
     text-align: center;
     font: normal normal 600 46px/69px Poppins;
     color: #452a29;
     opacity: 1;
+    font-size: calc((4 - 1) * .5vw + 1rem);
 }
 
 /* gallery section */
@@ -476,6 +625,7 @@ font-size: medium;
     color: #452a29;
     opacity: 1;
     margin-top: 1%;
+    font-size: calc((4 - 1) * .5vw + 1rem);
 }
 
   /*footerpart */
