@@ -1,0 +1,572 @@
+/* body section */
+
+body{
+    background: #f9fafb;
+  }
+
+.clearfix{
+    clear:both;
+}
+.clearfix:after{
+    clear: both;
+    display: table;
+    content: "";
+}
+.left{
+    float: left;
+}
+.right {
+    float: right;
+}
+/*image banner */
+.imagebanner{
+    width: 100%;
+    height: auto;
+    position: relative;
+    text-align:center;
+    margin: auto;
+
+}
+
+@media screen and (max-width: 1023px){
+  .imagebanner{
+    width: auto;
+  }
+}
+
+
+[class*="col-"] {
+  width: 100%;
+}
+
+
+/*image grid */
+.rowimage {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .gridone {
+    flex: 25%;
+    max-width: 50%;
+    padding: 0 4px;
+  }
+  
+  .gridone img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 800px) {
+    .gridone {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .gridone {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+
+
+
+
+/* media query */
+
+/* 
+@media screen and (max-width:768px)
+{
+    .imagelogo{
+      text-align: center;
+      position: absolute;
+      display: none;
+    }
+  } */
+
+@media (max-width:1198px){
+    .imagehome{
+     text-align: center;
+     width: 20%;
+    }
+}
+
+@media (max-width:800px){
+    .heropagetext{
+     text-align: center;
+    }
+}
+/* @media screen and (max-width: 800px) {
+    .imagebanner {
+      flex: 50%;
+      max-width: 50%;
+      display: none;
+      margin: auto;
+    }
+  } */
+@media screen and (max-width: 800px) {
+    .imagehome {
+      flex: auto;
+      margin: auto;
+    }
+  }
+
+
+ /* navbar section */
+
+ #navbar {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: .5rem;
+  flex-direction: column;
+  align-content: flex-start;
+  align-items: center;
+}
+
+
+#navbar .container-fluid{
+    box-shadow: 0px 3px 6px #868686;
+    opacity: 1;
+    background-color: white;
+    padding-left: 0px;
+}
+
+.navbar-expand-lg{
+    padding-top: 13px;
+}
+.navbar ul li {
+    padding: 4px 30px;
+    list-style: none;
+    float: left;
+    list-style-type:none;
+    list-style: none;
+    text-align: center;
+    text-decoration: none;
+    text-decoration: none;
+    font-family: poppins;
+
+}
+
+.navbar ul li a {
+    color: rgb(7, 7, 7);
+    text-decoration: none;
+
+}
+
+.navbar ul i{
+   
+    color: rgb(0, 0, 0);
+}
+
+
+
+/* hero page section */
+
+#heropage p{
+  font-size: 35px;
+  font-family: poppins;
+  font-weight: 600;
+  /* margin-top: 61px; */
+  /* margin-left: 35px; */
+  text-align: center;
+}
+
+#heropage .imagehome{
+    position: relative;
+    text-align: center;
+
+}
+#heropage .imagelogo {
+  text-align: center;
+  margin: auto;
+ 
+}
+
+
+.startwelcome h2{
+    text-align: center;
+    font: normal normal 600 46px/69px Poppins;
+    letter-spacing: 0px;
+    color: #452a29;
+    opacity: 1;
+    position: relative;
+    padding: 2%;
+    font-size: calc((4 - 1) * .5vw + 1rem);
+}
+
+.ourmission h2{
+    font-family: poppins;
+    font-size: revert;
+    color: #464646;
+    margin-left: 20px;
+    margin-right: 4px;
+
+}
+
+.ourmission{
+  position: relative;
+  width: auto;
+  float: right;
+  white-space: normal;
+  transition-timing-function: cubic-bezier(0.42, 0, 0.16, 0.99);
+  transition-duration: 0.8s;
+  transition-delay: 0.385714s;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-bottom: 0;
+  margin-left: 45%;
+  margin-right: auto;
+  font-size: smaller;
+  text-align: justify;
+}
+@media screen and (max-width: 768px) and (orientation: landscape){
+  .ourmission{
+    margin: auto;
+    text-align: justify;
+  }
+}
+@media screen and (max-width: 425px){
+  .ourmission{
+    margin: auto;
+    position: relative;
+    margin-top: 2%;
+  }
+}
+@media screen and (min-width: 768px){
+  .ourmission{
+    contain: block-size;
+    max-width: fit-content;
+    font-size: medium;
+    width: auto;
+    margin-inline-start: auto;
+}
+}
+
+@media screen and (min-width: 1024px){
+  .ourmission{
+    contain: block-size;
+    max-width: fit-content;
+    text-align: justify;
+    margin-left: 45%;
+    font-size: medium;
+}
+
+
+.aboutus h2{
+    font-family: poppins;
+    font-size: revert;
+    color: #464646;
+    margin-left: 20px;
+    margin-right: 4px;
+}
+
+ 
+.horizontaline hr{
+    top: -46px;
+    left: 0px;
+    width: 1280px;
+    height: 1px;
+    background: #e0cc3d 0% 0% no-repeat padding-box;
+    opacity: 1;
+    margin-top: 9px;
+    position: absolute;
+    margin-top: 601px;;
+    margin-left: 20px;
+}
+
+/* address section */
+
+/*
+.boxed{
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 10px;
+    -webkit-highlight: 20%;
+    height: 150px;
+    width: 300px;
+    position: absolute;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #0000001f;
+    opacity: 1;
+    margin-left: 2%;
+}
+@media screen and (max-width:769px){
+  .boxed{
+  }
+}
+
+
+.middleboxed{
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 10px;
+    height: 150px;
+    width: 300px;
+  
+     padding: -13%; 
+    float: inline-start;
+    float: inherit;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #0000001f;
+    opacity: 1;
+    margin-left: 40%;
+    vertical-align: centre;
+    padding-top: 1%;
+    position: relative;
+}
+
+@media screen and (max-width:768px){
+  .middleboxed{
+  }
+}
+@media screen and (max-width: 1025px) and (min-width: 1023px) and (orientation: landscape){
+.middleboxed {
+  margin-left: 20%;
+}
+}
+@media screen and (min-width:768px){
+  .middleboxed{
+    position: relative;
+    float: left;
+    margin: 0;
+    align-items: end;
+    margin: auto;
+   
+  }
+}
+
+
+
+.lastboxed{
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 10px;
+    height: 150px;
+    width: 300px;
+    padding: -13%;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #0000001f;
+    opacity: 1;
+    margin-left: 41%;
+    vertical-align: ce;
+    padding-top: 1%;
+    margin-left: auto;
+    margin-top: -10%;
+}
+
+@media screen and (max-width: 1920px) and (min-width: 1440px) and (orientation: landscape){
+  .lastboxed{
+    margin-right: 6%;
+    margin-top: -11%;
+    position: relative;
+  }
+}
+
+@media screen and (max-width: 1440px) and (min-width: 1023px) and (orientation: landscape){
+  .lastboxed{
+    position: relative;
+    flex: auto;
+    padding: 2%;
+    margin-top: -11%;
+    float: right;
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 1440px) and (orientation: landscape){
+  .lastboxed{
+    position: relative;
+    margin-left: 70%;
+    flex: auto;
+    padding: 2%;
+  }
+}
+@media screen and (max-width: 1025px) and (min-width: 1023px) and (orientation: landscape){
+  .lastboxed{
+    margin-top: -15%;
+    position: relative;
+    margin-left: 70%;
+    flex: auto;
+    padding: 2%;
+  }
+}
+@media screen and (max-width: 1024) and (min-width: 768px) and (orientation: landscape){
+  .lastboxed{
+    margin-right: 6%;
+    margin-top: -11%;
+    position: relative;
+  }
+}
+@media screen and (min-width: 768px) and(max-width: 790px) and (orientation: portrait){
+  .lastboxed{
+    margin-right: 6%;
+    margin-top: -11%;
+    position: relative;
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) and (min-width: 478px) and (orientation: landscape){
+  .lastboxed{
+    margin-right: 5%;
+    margin-top: -20%;
+    position: relative;
+  }
+}
+@media screen and (max-width: 768px) and (min-width: 478px) and (orientation: landscape){
+  .lastboxed{
+    margin-right: 5%;
+    margin-top: -20%;
+    position: relative;
+  }
+}
+@media screen and (max-width: 769px) and (min-width: 767px) and (orientation:landscape){
+  .lastboxed{
+    margin-right: 6%;
+    margin-top: -20%;
+    position: relative;
+  }
+}
+@media screen and (max-width: 500px) and (min-width: 320px) and (orientation:portrait){
+  .lastboxed{
+    margin-top: 5%;
+    position: absolute;
+    padding: -4%;
+    position: relative;
+  }
+}
+
+
+
+
+
+.boxed p{
+    text-align: center;
+    font-family: poppins;
+    font-size: 20px;
+    margin: unset;
+    padding: 13px 0px 0px 0px;
+    
+}
+
+.boxed img{
+    margin: 0%;
+    position: absolute;
+    padding: 10px;
+}
+*/
+.weekdays p{
+    font-family: poppins;
+    position: absolute;
+    padding: 20px;
+
+}
+
+.restaurantabout{
+  display: block;
+  max-width: 100%;
+  height: auto;
+  width: auto;
+  margin-top: 2%;
+  position: absolute;
+  text-align: center;
+}
+@media screen and (max-width: 769px)and (orientation: landscape){
+  .restaurantabout{
+    position: absolute;
+    width: 35%;
+  }
+}
+@media screen and (max-width:425px){
+  .restaurantabout{
+    position:relative;
+    width: auto;
+  }
+}
+@media screen and (min-width:1023px)and (max-width:1025px){
+  .restaurantabout{
+    position: absolute;
+    width: 45%;
+    margin-top: 7%;
+  }
+}
+@media screen and (min-width: 769px) and (min-width: 1023px) and (max-width: 1025px){
+.restaurantabout {
+    position: absolute;
+    width: 43%;
+    margin-top: 7%;
+}
+}
+@media screen and (max-width:768px){
+  .restaurantabout{
+    text-align: center;
+  }
+}
+
+
+
+.sunday p{
+    font-family: poppins;
+    position: absolute;
+    padding: 46px 20px;
+}
+
+.holiday p{
+    float: right;
+    padding: 0px 10px 0px 0px;
+    position: relative;
+    color: orange;
+    font-size: small;
+    margin-top: 67%;
+    font-family: poppins;
+}
+
+/* menu section */
+/*
+@media screen and (min-width: 1440px) and (orientation:landscape){
+  #menu{
+    padding-top:0%;
+  }
+}
+@media screen and (max-width: 426px){
+  #Menu{
+    margin: auto;
+    padding: 0%;
+  }
+}
+*/
+
+
+
+.menuheading{
+  position: absolute;
+}
+.menuheading p {
+    text-align: center;
+    font: normal normal 600 46px/69px Poppins;
+    color: #452a29;
+    opacity: 1;
+    font-size: calc((4 - 1) * .5vw + 1rem);
+}
+
+/* gallery section */
+
+.galleryheading p{
+    text-align: center;
+    font: normal normal 600 46px/69px Poppins;
+    color: #452a29;
+    opacity: 1;
+    margin-top: 1%;
+    font-size: calc((4 - 1) * .5vw + 1rem);
+}
+
+#footer{
+  text-align: center;
+}
