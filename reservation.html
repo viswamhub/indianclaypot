@@ -46,7 +46,7 @@
         <div class="col-lg-8">
 
           <!-- Form -->
-          <form method="post" id="reservationForm">
+          <div id="reservationForm">
             <div class="row gx-3">
               <div class="col-md-6">
 
@@ -111,7 +111,7 @@
 
               </div>
             </div>
-          </form>
+          </div>
 
         </div>
       </div>
@@ -139,10 +139,10 @@
         alert("Hola, Your reservation is successful.Enjoy your Day."),
         redirect_after_email()
       );
-      function redirect_after_email()
-      {
-        window.location.href("https://indianclaypot.com/");
-      }
+    }
+
+    function redirect_after_email() {
+      window.location.replace("https://indianclaypot.com");
     }
 
   </script>
